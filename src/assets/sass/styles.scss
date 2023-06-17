@@ -1,5 +1,6 @@
 @import 'libs/_vars.scss';
 
+
 $size-header-width: 35%;
 $size-header-pad: 4em;
 
@@ -72,4 +73,58 @@ input, select, textarea {
     -webkit-appearance: none;
     -ms-appearance: none;
     appearance: none;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+
+    background-image: url('../images/bg.jpg');
+    background-position: top left;
+    background-repeat: no-repeat;
+    background-size: 150%;
+    color: #a2a2a2;
+    height: 100%;
+    left: 0;
+    padding: $size-header-pad;
+    position: fixed;
+    text-align: right;
+    top: 0;
+    width: $size-header-width;
+
+    > * {
+        flex-shrink: 0;
+        width: 100%;
+    }
+
+    > .inner {
+        flex-grow: 1;
+        margin: 0 0 ($size-header-pad * 0.5) 0;
+    }
+
+    strong {
+        color: _palette(accent2, fg-bold);
+    }
+
+    h2, h3, h4, h5, h6 {
+        color: _palette(accent2, fg-bold);
+    }
+
+    h1 {
+        color: _palette(accent2, fg);
+        font-size: 1.35em;
+        line-height: 1.75em;
+        margin: 0;
+    }
+
+    .avatar {
+        margin: 0 0 2em * 0.5 0;
+        width: 6.25em;
+        border-radius: 50%;
+        border: 0;
+        display: inline-block;
+        position: relative;
+    }    
 }
