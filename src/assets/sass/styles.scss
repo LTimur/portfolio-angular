@@ -1,4 +1,5 @@
-@import 'libs/_vars.scss';
+@import 'libs/_vars';
+@import 'libs/functions';
 
 
 $size-header-width: 35%;
@@ -81,7 +82,7 @@ input, select, textarea {
     align-items: flex-end;
     justify-content: space-between;
 
-    background-image: url('../images/bg.jpg');
+    background-image: url('../images/back.jpg');
     background-position: top left;
     background-repeat: no-repeat;
     background-size: 150%;
@@ -105,10 +106,6 @@ input, select, textarea {
     }
 
     strong {
-        color: _palette(accent2, fg-bold);
-    }
-
-    h2, h3, h4, h5, h6 {
         color: _palette(accent2, fg-bold);
     }
 
