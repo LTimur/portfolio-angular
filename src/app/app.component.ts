@@ -10,19 +10,19 @@ export class AppComponent {
 
   projects = [
     {
-      image: '',
+      image: 'hackernews.png',
       title: 'Hackernews clone',
       github: 'https://github.com/LTimur/pet-react-ts-hackernews',
       demo: 'https://hackernewsclonereact.netlify.app/'
     },
     {
-      image: '',
+      image: 'todolist.png',
       title: 'Todolist',
       github: 'https://github.com/LTimur/pet-react-todolist',
       demo: 'https://pet-react-todolist.netlify.app/'
     },
     {
-      image: '',
+      image: 'landingEmentor.png',
       title: 'Landing for educational platform',
       github: 'https://github.com/LTimur/pet-landing-ementor',
       demo: 'https://ltimur.github.io/pet-landing-ementor/'
